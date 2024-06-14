@@ -1,9 +1,23 @@
+:root {
+    --left-container-light-txt-colour: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./Norse-Bold.otf);
+}
+
 .container {
     display: flex;
+    height: 100vh;
 }
 
 .left-screen-container {
     flex: 3 1 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .right-screen-container {
@@ -12,5 +26,33 @@
 
 .background-img {
     width: 100%;
+    position: absolute;
+    z-index: -100;
+    height: 100%;
 }
 
+.odin-title-banner,
+.img-credits-txt {
+    color: var(--left-container-light-txt-colour);
+    font-family: Norse-Bold;
+    text-align: center;
+}
+
+.odin-title-banner {
+    background-color: rgba(0,0,0,0.4);
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 6.5rem;
+    margin-top: 25%;
+}
+
+.odin-title-banner-img  {
+    max-height: 8rem;
+    width: auto;
+}
+
+.odin-title-banner-txt {
+    margin: 0;
+}
