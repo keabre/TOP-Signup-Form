@@ -1,5 +1,6 @@
 :root {
     --left-container-light-txt-colour: rgb(255, 255, 255);
+    --fern-green: #596D48;
 }
 
 @font-face {
@@ -69,7 +70,7 @@
 }
 
 .form {
-    flex-grow: 4;
+    flex-grow: 5;
     display: flex;
     flex-direction: column;
 }
@@ -77,6 +78,7 @@
 .input-section {
     background-color: var(--left-container-light-txt-colour);
     max-height: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .input-section,
@@ -92,16 +94,22 @@
 .label-input-pair-container {
     display: flex;
     flex-direction: column;
-    margin: 20px 50px;
+    margin: 10px 50px;
 }
 
 .input-field {
     width: 300px;
     height: 20px;
+    border: solid #E5E7EB 1px;
+    border-radius: 3px;
 }
 
 .input-section-form-para {
     margin-left: 50px;
+}
+
+.input-label {
+    font-size: 0.8rem;
 }
 
 .create-account-submit-btn, 
@@ -114,4 +122,44 @@
     height: 40px;
     margin-top: 30px;
     margin-bottom: 10px;
+    border-radius: 0.5rem;
+    border: 0;
+    background-color: var(--fern-green);
+    color: var(--left-container-light-txt-colour)
+}
+
+.login-link:link,
+.login-link:visited {
+    text-decoration: none;
+    color: var(--fern-green);
+}
+
+.input-section-form-para,
+.first-para,
+.second-para {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.first-para {
+    margin-bottom: 10px;
+}
+
+.second-para {
+    margin-top: 10px;
+}
+
+#confirm-password-input:invalid,
+#password-input:invalid {
+    border: solid red 1px;
+}
+
+.password-not-match-txt {
+    color: red;
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+.input-field:focus {
+    border: solid 1px red;
 }
