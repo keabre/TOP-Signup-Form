@@ -22,6 +22,9 @@
 
 .right-screen-container {
     flex: 5 1 0;   
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
 }
 
 .background-img {
@@ -55,4 +58,60 @@
 
 .odin-title-banner-txt {
     margin: 0;
+}
+
+.form-page-intro-txt {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 0 20px 50px;
+}
+
+.form {
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-section {
+    background-color: var(--left-container-light-txt-colour);
+    max-height: 50%;
+}
+
+.input-section,
+.submit-section {
+    flex-grow: 1;
+}
+
+.input-fields {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.label-input-pair-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 50px;
+}
+
+.input-field {
+    width: 300px;
+    height: 20px;
+}
+
+.input-section-form-para {
+    margin-left: 50px;
+}
+
+.create-account-submit-btn, 
+.login-alternative-text {
+    margin-left: 50px;
+}
+
+.create-account-submit-btn {
+    width: 220px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
